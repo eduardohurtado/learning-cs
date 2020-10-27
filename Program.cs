@@ -17,6 +17,7 @@ namespace learning_cs
 
             TypeSome();
             TypeSomeSpec("I'm an argument");
+            Console.WriteLine("Add from another method: " + Sum(15, 31));
 
             Console.WriteLine(Int32.Parse(myString) + Int32.Parse(myString));
             Console.ReadKey();
@@ -31,6 +32,11 @@ namespace learning_cs
         public static void TypeSomeSpec(string myText)
         {
             Console.WriteLine(myText);
+        }
+
+        public static int Sum(int num1, int num2)
+        {
+            return num1 + num2;
         }
     }
 }

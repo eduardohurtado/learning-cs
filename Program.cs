@@ -8,33 +8,52 @@ namespace learning_cs
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Clear();
-            Console.WriteLine("What's your name?");
+            Console.WriteLine("Welcome to the console application, please type number of the desire operation:");
+            Console.WriteLine("[0]: Add two numbers.");
+            string selection = Console.ReadLine();
+            Int32 result;
 
-            int num1 = 12;
-            Console.WriteLine(num1);
+            if (Int32.TryParse(selection, out result))
+            {
+                int selector = Int32.Parse(selection);
 
-            string myString = "99";
+                switch (selector)
+                {
+                    case 0:
+                        Int32 num1, num2;
 
-            TypeSome();
-            TypeSomeSpec("I'm an argument");
-            Console.WriteLine("Add from another method: " + Sum(15, 31));
+                        Console.WriteLine("Please type the first number, and then press ENTER:");
+                        string num1S = Console.ReadLine();
 
-            Console.WriteLine(Int32.Parse(myString) + Int32.Parse(myString));
+                        if (Int32.TryParse(num1S, out num1))
+                        {
+                            num1 = Int32.Parse(num1S);
+
+                            Console.WriteLine("Please type the second number, and then press ENTER:");
+                            string num2S = Console.ReadLine();
+
+                            if (Int32.TryParse(num2S, out num2))
+                            {
+                                num2 = Int32.Parse(num2S);
+
+                                Console.WriteLine("The addition is: " + AddNumbers(num1, num2));
+                            }
+                            else { Console.WriteLine("Error: Number 2 is not valid."); }
+                        }
+                        else { Console.WriteLine("Error: Number 1 is not valid."); }
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("ERROR: the option was not recognized.");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
-
         // Access level - (static) - Return type - Method name (params)
-        public static void TypeSome()
-        {
-            Console.WriteLine("Typed some from TypeSome");
-        }
-
-        public static void TypeSomeSpec(string myText)
-        {
-            Console.WriteLine(myText);
-        }
-
-        public static int Sum(int num1, int num2)
+        public static int AddNumbers(int num1, int num2)
         {
             return num1 + num2;
         }

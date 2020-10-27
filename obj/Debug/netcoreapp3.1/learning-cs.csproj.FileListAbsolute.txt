@@ -1,0 +1,13 @@
+/home/usc/Documents/Developer/Git projects/learning-cs/bin/Debug/netcoreapp3.1/learning-cs
+/home/usc/Documents/Developer/Git projects/learning-cs/bin/Debug/netcoreapp3.1/learning-cs.deps.json
+/home/usc/Documents/Developer/Git projects/learning-cs/bin/Debug/netcoreapp3.1/learning-cs.runtimeconfig.json
+/home/usc/Documents/Developer/Git projects/learning-cs/bin/Debug/netcoreapp3.1/learning-cs.runtimeconfig.dev.json
+/home/usc/Documents/Developer/Git projects/learning-cs/bin/Debug/netcoreapp3.1/learning-cs.dll
+/home/usc/Documents/Developer/Git projects/learning-cs/bin/Debug/netcoreapp3.1/learning-cs.pdb
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.csprojAssemblyReference.cache
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.AssemblyInfoInputs.cache
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.AssemblyInfo.cs
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.csproj.CoreCompileInputs.cache
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.dll
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.pdb
+/home/usc/Documents/Developer/Git projects/learning-cs/obj/Debug/netcoreapp3.1/learning-cs.genruntimeconfig.cache

@@ -18,6 +18,16 @@ namespace learning_cs
             Human edward = new Human("Edward", "Hurtado");
             edward.greet();
 
+            // New object box with props
+            Box myBox = new Box();
+            myBox.Height = 3;   // As aprop.
+            myBox.setWidth(5);  // As a method.
+            myBox.showInfo();
+            Console.Clear();
+            Console.WriteLine("Box height: {0}", myBox.Height);
+            Console.ReadKey();
+
+
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Clear();
             Console.WriteLine("Welcome to the console application, please type number of the desire operation, and then press ENTER:");

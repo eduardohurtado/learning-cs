@@ -6,18 +6,28 @@ namespace learning_cs
     {
         static void Main(string[] args)
         {
+            // New basic object from class Human.
+            Human basicHuman = new Human();
+            basicHuman.greet();
+
+            // New uncomplete object from class Human.
+            Human uncompleteHuman = new Human("Christian");
+            uncompleteHuman.greet();
+
+            // New object from class Human.
+            Human edward = new Human("Edward", "Hurtado");
+            edward.greet();
+
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Clear();
             Console.WriteLine("Welcome to the console application, please type number of the desire operation, and then press ENTER:");
             Console.WriteLine("[0]: Add two numbers.");
             Console.WriteLine("[1]: Water temperature.");
             string selection = Console.ReadLine();
-            Int32 result;
+            Int32 selector;
 
-            if (Int32.TryParse(selection, out result))
+            if (Int32.TryParse(selection, out selector))
             {
-                int selector = Int32.Parse(selection);
-
                 switch (selector)
                 {
                     case 0:
@@ -63,7 +73,9 @@ namespace learning_cs
                         Console.WriteLine("The water state is: " + WaterState(waterNumber));
                         break;
 
-                    default: break;
+                    default:
+                        Console.WriteLine("ERROR: the option was not recognized.");
+                        break;
                 }
             }
             else
